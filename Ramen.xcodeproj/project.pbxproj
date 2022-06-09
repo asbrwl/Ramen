@@ -16,6 +16,13 @@
 		5DFF7ACA2850EB860021A641 /* RamenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DFF7AC92850EB860021A641 /* RamenTests.swift */; };
 		5DFF7AD42850EB860021A641 /* RamenUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DFF7AD32850EB860021A641 /* RamenUITests.swift */; };
 		5DFF7AD62850EB860021A641 /* RamenUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DFF7AD52850EB860021A641 /* RamenUITestsLaunchTests.swift */; };
+		5DFF7AE92850EBB30021A641 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DFF7AE82850EBB30021A641 /* WidgetKit.framework */; };
+		5DFF7AEB2850EBB30021A641 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DFF7AEA2850EBB30021A641 /* SwiftUI.framework */; };
+		5DFF7AEE2850EBB30021A641 /* RamenTodayWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DFF7AED2850EBB30021A641 /* RamenTodayWidget.swift */; };
+		5DFF7AF12850EBB40021A641 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5DFF7AF02850EBB40021A641 /* Assets.xcassets */; };
+		5DFF7AF32850EBB40021A641 /* RamenTodayWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 5DFF7AEF2850EBB30021A641 /* RamenTodayWidget.intentdefinition */; };
+		5DFF7AF42850EBB40021A641 /* RamenTodayWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 5DFF7AEF2850EBB30021A641 /* RamenTodayWidget.intentdefinition */; };
+		5DFF7AF72850EBB40021A641 /* RamenTodayWidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 5DFF7AE62850EBB30021A641 /* RamenTodayWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,7 +40,28 @@
 			remoteGlobalIDString = 5DFF7AAF2850EB850021A641;
 			remoteInfo = Ramen;
 		};
+		5DFF7AF52850EBB40021A641 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5DFF7AA82850EB850021A641 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5DFF7AE52850EBB30021A641;
+			remoteInfo = RamenTodayWidgetExtension;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5DFF7AFB2850EBB40021A641 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				5DFF7AF72850EBB40021A641 /* RamenTodayWidgetExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		5DFF7AB02850EB850021A641 /* Ramen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ramen.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -48,6 +76,13 @@
 		5DFF7ACF2850EB860021A641 /* RamenUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RamenUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DFF7AD32850EB860021A641 /* RamenUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RamenUITests.swift; sourceTree = "<group>"; };
 		5DFF7AD52850EB860021A641 /* RamenUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RamenUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		5DFF7AE62850EBB30021A641 /* RamenTodayWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = RamenTodayWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		5DFF7AE82850EBB30021A641 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		5DFF7AEA2850EBB30021A641 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		5DFF7AED2850EBB30021A641 /* RamenTodayWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RamenTodayWidget.swift; sourceTree = "<group>"; };
+		5DFF7AEF2850EBB30021A641 /* RamenTodayWidget.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = RamenTodayWidget.intentdefinition; sourceTree = "<group>"; };
+		5DFF7AF02850EBB40021A641 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5DFF7AF22850EBB40021A641 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +107,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5DFF7AE32850EBB30021A641 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DFF7AEB2850EBB30021A641 /* SwiftUI.framework in Frameworks */,
+				5DFF7AE92850EBB30021A641 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -79,8 +123,10 @@
 			isa = PBXGroup;
 			children = (
 				5DFF7AB22850EB850021A641 /* Ramen */,
+				5DFF7AEC2850EBB30021A641 /* RamenTodayWidget */,
 				5DFF7AC82850EB860021A641 /* RamenTests */,
 				5DFF7AD22850EB860021A641 /* RamenUITests */,
+				5DFF7AE72850EBB30021A641 /* Frameworks */,
 				5DFF7AB12850EB850021A641 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -91,6 +137,7 @@
 				5DFF7AB02850EB850021A641 /* Ramen.app */,
 				5DFF7AC52850EB860021A641 /* RamenTests.xctest */,
 				5DFF7ACF2850EB860021A641 /* RamenUITests.xctest */,
+				5DFF7AE62850EBB30021A641 /* RamenTodayWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -133,6 +180,26 @@
 			path = RamenUITests;
 			sourceTree = "<group>";
 		};
+		5DFF7AE72850EBB30021A641 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5DFF7AE82850EBB30021A641 /* WidgetKit.framework */,
+				5DFF7AEA2850EBB30021A641 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5DFF7AEC2850EBB30021A641 /* RamenTodayWidget */ = {
+			isa = PBXGroup;
+			children = (
+				5DFF7AED2850EBB30021A641 /* RamenTodayWidget.swift */,
+				5DFF7AEF2850EBB30021A641 /* RamenTodayWidget.intentdefinition */,
+				5DFF7AF02850EBB40021A641 /* Assets.xcassets */,
+				5DFF7AF22850EBB40021A641 /* Info.plist */,
+			);
+			path = RamenTodayWidget;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,10 +210,12 @@
 				5DFF7AAC2850EB850021A641 /* Sources */,
 				5DFF7AAD2850EB850021A641 /* Frameworks */,
 				5DFF7AAE2850EB850021A641 /* Resources */,
+				5DFF7AFB2850EBB40021A641 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				5DFF7AF62850EBB40021A641 /* PBXTargetDependency */,
 			);
 			name = Ramen;
 			productName = Ramen;
@@ -189,6 +258,23 @@
 			productReference = 5DFF7ACF2850EB860021A641 /* RamenUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		5DFF7AE52850EBB30021A641 /* RamenTodayWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5DFF7AF82850EBB40021A641 /* Build configuration list for PBXNativeTarget "RamenTodayWidgetExtension" */;
+			buildPhases = (
+				5DFF7AE22850EBB30021A641 /* Sources */,
+				5DFF7AE32850EBB30021A641 /* Frameworks */,
+				5DFF7AE42850EBB30021A641 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RamenTodayWidgetExtension;
+			productName = RamenTodayWidgetExtension;
+			productReference = 5DFF7AE62850EBB30021A641 /* RamenTodayWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -210,6 +296,9 @@
 						CreatedOnToolsVersion = 13.4.1;
 						TestTargetID = 5DFF7AAF2850EB850021A641;
 					};
+					5DFF7AE52850EBB30021A641 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
 				};
 			};
 			buildConfigurationList = 5DFF7AAB2850EB850021A641 /* Build configuration list for PBXProject "Ramen" */;
@@ -228,6 +317,7 @@
 				5DFF7AAF2850EB850021A641 /* Ramen */,
 				5DFF7AC42850EB860021A641 /* RamenTests */,
 				5DFF7ACE2850EB860021A641 /* RamenUITests */,
+				5DFF7AE52850EBB30021A641 /* RamenTodayWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -256,6 +346,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5DFF7AE42850EBB30021A641 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DFF7AF12850EBB40021A641 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -265,6 +363,7 @@
 			files = (
 				5DFF7ABD2850EB860021A641 /* Persistence.swift in Sources */,
 				5DFF7AC02850EB860021A641 /* Ramen.xcdatamodeld in Sources */,
+				5DFF7AF42850EBB40021A641 /* RamenTodayWidget.intentdefinition in Sources */,
 				5DFF7AB62850EB850021A641 /* ContentView.swift in Sources */,
 				5DFF7AB42850EB850021A641 /* RamenApp.swift in Sources */,
 			);
@@ -287,6 +386,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5DFF7AE22850EBB30021A641 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DFF7AF32850EBB40021A641 /* RamenTodayWidget.intentdefinition in Sources */,
+				5DFF7AEE2850EBB30021A641 /* RamenTodayWidget.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -299,6 +407,11 @@
 			isa = PBXTargetDependency;
 			target = 5DFF7AAF2850EB850021A641 /* Ramen */;
 			targetProxy = 5DFF7AD02850EB860021A641 /* PBXContainerItemProxy */;
+		};
+		5DFF7AF62850EBB40021A641 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5DFF7AE52850EBB30021A641 /* RamenTodayWidgetExtension */;
+			targetProxy = 5DFF7AF52850EBB40021A641 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -420,6 +533,7 @@
 		5DFF7ADA2850EB860021A641 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -449,6 +563,7 @@
 		5DFF7ADB2850EB860021A641 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -551,6 +666,60 @@
 			};
 			name = Release;
 		};
+		5DFF7AF92850EBB40021A641 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5C8BW74VG3;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RamenTodayWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = RamenTodayWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.asabharwal.Ramen.RamenTodayWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5DFF7AFA2850EBB40021A641 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5C8BW74VG3;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RamenTodayWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = RamenTodayWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.asabharwal.Ramen.RamenTodayWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -586,6 +755,15 @@
 			buildConfigurations = (
 				5DFF7AE02850EB860021A641 /* Debug */,
 				5DFF7AE12850EB860021A641 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5DFF7AF82850EBB40021A641 /* Build configuration list for PBXNativeTarget "RamenTodayWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5DFF7AF92850EBB40021A641 /* Debug */,
+				5DFF7AFA2850EBB40021A641 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
